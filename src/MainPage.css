@@ -1,0 +1,70 @@
+@keyframes slideBorder {
+	0% {
+		background-color: transparent;
+		transform: translateX(-80%);
+	}
+	100% {
+		background-color: #44a1a0;
+		transform: translateX(0);
+	}
+}
+.main {
+	position: relative;
+}
+
+.main__navbar {
+	width: 100%;
+	background-color: white;
+	display: flex;
+	align-items: center;
+}
+
+.main__links {
+	margin-left: auto;
+}
+.main__links > button {
+	font-family: 'Hind', sans-serif;
+	font-weight: 300;
+	font-size: large;
+	margin: 0 20px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	position: relative;
+}
+.main__links > button > span {
+	position: absolute;
+	height: 3px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 10px;
+}
+button:hover > .border {
+	animation: slideBorder 300ms ease-in forwards;
+}
+
+.main__header {
+	height: 85vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-family: 'Hind', sans-serif;
+}
+
+.main__icon {
+	margin-top: 10px;
+	display: block !important;
+	color: rgba(153, 150, 150, 0.432);
+}
+
+.main__title {
+	position: absolute;
+	top: 30%;
+	left: 30%;
+}
+.main__title > p {
+	font-size: 100px;
+	margin: 0;
+	padding: 0;
+}
