@@ -5,4 +5,5 @@
 .app {
 	width: 95vw;
 	margin: 20px auto;
+	position: relative;
 }

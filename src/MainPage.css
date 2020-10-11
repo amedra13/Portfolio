@@ -1,47 +1,19 @@
-@keyframes slideBorder {
+@keyframes bounce {
 	0% {
-		background-color: transparent;
-		transform: translateX(-80%);
+		transform: translateY(0);
+	}
+	25% {
+		transform: translateY(-15px);
+	}
+	50% {
+		transform: translateY(0px);
+	}
+	75% {
+		transform: translateY(-5px);
 	}
 	100% {
-		background-color: #44a1a0;
-		transform: translateX(0);
+		transform: translate(0);
 	}
-}
-.main {
-	position: relative;
-}
-
-.main__navbar {
-	width: 100%;
-	background-color: white;
-	display: flex;
-	align-items: center;
-}
-
-.main__links {
-	margin-left: auto;
-}
-.main__links > button {
-	font-family: 'Hind', sans-serif;
-	font-weight: 300;
-	font-size: large;
-	margin: 0 20px;
-	background-color: transparent;
-	border: none;
-	outline: none;
-	position: relative;
-}
-.main__links > button > span {
-	position: absolute;
-	height: 3px;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	border-radius: 10px;
-}
-button:hover > .border {
-	animation: slideBorder 300ms ease-in forwards;
 }
 
 .main__header {
@@ -51,20 +23,66 @@ button:hover > .border {
 	justify-content: space-between;
 	font-family: 'Hind', sans-serif;
 }
+.main__intro {
+	margin-top: 100px;
+	margin-left: 50px;
+	font-family: 'Libre Franklin', sans-serif;
+}
+.main__intro > p {
+	margin: 0;
+}
 
 .main__icon {
-	margin-top: 10px;
+	margin-top: 20px;
 	display: block !important;
 	color: rgba(153, 150, 150, 0.432);
 }
 
 .main__title {
 	position: absolute;
-	top: 30%;
-	left: 30%;
+	display: flex;
+	top: 40%;
+	left: 15%;
 }
-.main__title > p {
-	font-size: 100px;
+.main__title > div > p {
+	font-size: 200px;
+	font-family: 'Abril Fatface', cursive;
 	margin: 0;
 	padding: 0;
+	background: -webkit-linear-gradient(rgba(81, 231, 156, 0.801), #5abcb9);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.main__title > div > p:first-child {
+	margin-bottom: -140px;
+	margin-left: -30px;
+	z-index: 40;
+}
+.main__title > i {
+	font-size: 250px;
+	background: -webkit-linear-gradient(rgba(81, 231, 156, 0.801), #5abcb9);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.main__footer {
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	color: rgba(153, 150, 150, 0.432);
+}
+.main__footer > div > p {
+	margin: 0;
+}
+
+.main__footer > div:last-child {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.main__mouse {
+	font-size: 30px !important;
+	color: #990bf850;
+	animation: bounce 1.3s ease-in-out infinite;
 }
