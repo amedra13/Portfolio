@@ -9,7 +9,7 @@ import './App.css';
 function App() {
 	return (
 		<div className="app">
-			<div className="app__main">
+			<div id="home" className="app__main">
 				<Navbar />
 				<div className="app__info">
 					<div className="app__title">
@@ -30,8 +30,16 @@ function App() {
 				</div>
 				<BubblesEffect />
 			</div>
-			<div className="app__aboutMe"></div>
-			<div className="app__portfolio"></div>
+			<div id="about" className="app__aboutMe">
+				{' '}
+				about
+			</div>
+			<div id="portfolio" className="app__portfolio">
+				portfolio
+			</div>
+			<div id="contact" className="app__contact">
+				contact
+			</div>
 		</div>
 	);
 }

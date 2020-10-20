@@ -7,10 +7,10 @@ const Navbar = () => {
 		<div className="navbar">
 			<FontDownloadOutlinedIcon fontSize="large" />
 			<div className="navbar__links">
-				<h2>Home</h2>
-				<h2>About</h2>
-				<h2>Portfolio</h2>
-				<h2>Contact</h2>
+				<a href="/">Home</a>
+				<a href="#about">About</a>
+				<a href="#portfolio">Portfolio</a>
+				<a href="#contact">Contact</a>
 			</div>
 		</div>
 	);
