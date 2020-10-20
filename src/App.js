@@ -1,9 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
+import MainPage from './MainPage';
 import BubblesEffect from './BubblesEffect';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import TwitterIcon from '@material-ui/icons/Twitter';
 import './App.css';
 
 function App() {
@@ -11,7 +9,8 @@ function App() {
 		<div className="app">
 			<div id="home" className="app__main">
 				<Navbar />
-				<div className="app__info">
+				<MainPage />
+				{/* <div className="app__info">
 					<div className="app__title">
 						<p>Welcome to my Portfolio</p>
 						<p>
@@ -27,7 +26,7 @@ function App() {
 						<LinkedInIcon />
 						<TwitterIcon />
 					</div>
-				</div>
+				</div> */}
 				<BubblesEffect />
 			</div>
 			<div id="about" className="app__aboutMe">
