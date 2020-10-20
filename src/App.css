@@ -7,4 +7,6 @@
 	height: 100vh;
 	width: 100vw;
 	position: relative;
+	background: linear-gradient(rgb(35, 115, 126), #74cce9);
+	overflow: hidden;
 }

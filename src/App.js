@@ -1,12 +1,12 @@
 import React from 'react';
-import Background from './Background';
 import Navbar from './Navbar';
+import BubblesEffect from './BubblesEffect';
 import './App.css';
 
 function App() {
 	return (
 		<div className="app">
-			<Background />
+			<BubblesEffect />
 			<Navbar />
 		</div>
 	);
