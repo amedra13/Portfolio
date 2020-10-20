@@ -16,8 +16,7 @@
 }
 .background__bg-bubbles {
 	position: absolute;
-	height: 60px;
-	bottom: -70px;
+	bottom: -250px;
 	left: 0;
 	right: 0;
 	display: flex;
