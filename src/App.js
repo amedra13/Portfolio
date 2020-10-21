@@ -1,27 +1,31 @@
 import React from 'react';
-import Navbar from './Navbar/Navbar';
 import MainPage from './MainPage/MainPage';
-import BubblesEffect from './BubbleEffect/BubblesEffect';
+import AboutMe from './AboutMe/AboutMe';
+import Portfolio from './Portfolio/Portfolio';
+import Contact from './Contact/Contact';
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 function App() {
 	return (
 		<div className="app">
-			<div id="home" className="app__main">
-				<Navbar />
-				<MainPage />
-				<BubblesEffect />
-			</div>
-			<div id="about" className="app__aboutMe">
-				{' '}
-				about
-			</div>
-			<div id="portfolio" className="app__portfolio">
-				portfolio
-			</div>
-			<div id="contact" className="app__contact">
-				contact
-			</div>
+			<Router>
+				<Switch>
+					<Route exact path="/">
+						<MainPage />
+					</Route>
+					<Route exact path="/about">
+						<AboutMe />
+					</Route>
+					<Route exact path="/portfolio">
+						<Portfolio />
+					</Route>
+					<Route exact path="/contact">
+						<Contact />
+					</Route>
+				</Switch>
+			</Router>
 		</div>
 	);
 }

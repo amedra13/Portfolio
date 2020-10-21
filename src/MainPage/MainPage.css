@@ -17,20 +17,23 @@
 }
 
 .main {
-	height: 90vh;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	font-family: 'Ubuntu', sans-serif;
 	font-style: italic;
 	color: rgba(203, 226, 235, 0.822);
-	padding-left: 50px;
+	position: relative;
+	background: linear-gradient(rgb(35, 115, 126), #74cce9);
+	overflow: hidden;
 }
 .main > * {
 	z-index: 40;
 }
 .main__intro {
 	font-size: 30px;
+	padding-left: 50px;
 }
 
 .main__title {
@@ -60,7 +63,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	transform: translateY(30px);
+	padding-left: 50px;
+	transform: translateY(-15px);
 }
 
 .main__footer > div:last-child {

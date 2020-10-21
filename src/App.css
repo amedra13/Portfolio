@@ -11,7 +11,6 @@ html {
 }
 .app {
 	width: 100vw;
-	background: linear-gradient(rgb(35, 115, 126), #74cce9);
 }
 .app__main {
 	position: relative;
@@ -35,16 +34,4 @@ html {
 	font-size: 120px;
 	text-align: center;
 	font-family: 'Ubuntu', sans-serif;
-}
-.app__aboutMe {
-	height: 100vh;
-	background-color: rgb(49, 128, 165);
-}
-.app__portfolio {
-	height: 100vh;
-	background-color: rgb(167, 70, 223);
-}
-.app__contact {
-	height: 100vh;
-	background-color: rgb(223, 70, 190);
 }

@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Navbar from '../Navbar/Navbar';
+import BubblesEffect from '../BubbleEffect/BubblesEffect';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
@@ -10,6 +11,7 @@ import './MainPage.css';
 const MainPage = () => {
 	return (
 		<div className="main">
+			<Navbar />
 			<div className="main__intro">
 				<p>
 					Hello, I am an aspiring Front End Developer located in the Bay Area
@@ -34,6 +36,7 @@ const MainPage = () => {
 					<p>scroll</p>
 				</div>
 			</div>
+			<BubblesEffect />
 		</div>
 	);
 };
