@@ -1,6 +1,7 @@
 import React from 'react';
 import Nobu from './Projects/Nobu';
 import Spotify from './Projects/Spotify';
+import SportCards from './Projects/SportCards'
 import Navbar from '../Navbar/Navbar';
 
 import './Portfolio.css';
@@ -18,6 +19,7 @@ const Portfolio = () => {
 			<div className="portfolio__projects">
 				<Nobu />
 				<Spotify />
+				<SportCards/>
 			</div>
 		</div>
 	);
