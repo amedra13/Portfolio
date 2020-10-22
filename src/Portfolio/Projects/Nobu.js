@@ -8,7 +8,7 @@ const Nobu = () => {
 	return (
 		<div className="nobu">
 			<Grid className="nobu__grid" container>
-				<Grid className="nobu__gridItem" item xs={12} md={6}>
+				<Grid className="nobu__gridItem bg__white" item xs={12} md={6}>
 					<h1>Nobu Palo Alto Clone</h1>
 					<div className="nobu__left">
 						<img src={NobuImage} alt="Project: Nobu Palo Alto Clone" />
