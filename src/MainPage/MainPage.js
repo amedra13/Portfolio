@@ -13,11 +13,10 @@ const MainPage = () => {
 		<div className="main">
 			<Navbar />
 			<div className="main__intro">
-				<p>
-					Hello, I am an aspiring Front End Developer located in the Bay Area
-				</p>
+				<p>Hello, welcome to my Portfolio!</p>
 				<p style={{ borderBottom: '3px solid white' }}>
-					Welcome to my Portfolio!
+					I am an aspiring Front End Developer with an interest in all things
+					React.js
 				</p>
 			</div>
 			<div className="main__title">

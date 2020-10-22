@@ -1,7 +1,7 @@
-.nobu__grid {
+.spotify__grid {
 	height: 100% !important;
 }
-.nobu__gridItem {
+.spotify__gridItem {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -9,7 +9,7 @@
 	height: 80vh;
 	border-radius: 5px;
 }
-.nobu__left {
+.spotify__left {
 	min-height: 40%;
 	margin: 50px 0;
 	width: 85%;
@@ -21,14 +21,14 @@
 	align-items: center;
 	padding: 20px;
 }
-.nobu__left > img {
+.spotify__left > img {
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
 	border-radius: 5px;
 }
 
-.nobu__right {
+.spotify__right {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -38,15 +38,15 @@
 	border-radius: 5px;
 	padding: 30px;
 }
-.nobu__right > h1 {
+.spotify__right > h1 {
 	font-size: 20px;
 }
-.nobu__right > p {
+.spotify__right > p {
 	padding-left: 20px;
 	font-size: 15px;
 	margin: 10px 0;
 }
-.nobu__right > ul > li {
+.spotify__right > ul > li {
 	list-style: none;
 	padding-left: 20px;
 	font-size: 15px;

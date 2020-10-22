@@ -1,5 +1,6 @@
 import React from 'react';
 import Nobu from './Projects/Nobu';
+import Spotify from './Projects/Spotify';
 import Navbar from '../Navbar/Navbar';
 
 import './Portfolio.css';
@@ -16,7 +17,7 @@ const Portfolio = () => {
 			</div>
 			<div className="portfolio__projects">
 				<Nobu />
-				<div className="project__spotify">Spotify</div>
+				<Spotify />
 			</div>
 		</div>
 	);
