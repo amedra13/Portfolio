@@ -16,7 +16,9 @@ const MainPage = () => {
 				<p>
 					Hello, I am an aspiring Front End Developer located in the Bay Area
 				</p>
-				<p>Welcome to my Portfolio!</p>
+				<p style={{ borderBottom: '3px solid white' }}>
+					Welcome to my Portfolio!
+				</p>
 			</div>
 			<div className="main__title">
 				<div>

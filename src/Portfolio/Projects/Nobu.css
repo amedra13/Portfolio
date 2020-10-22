@@ -1,0 +1,63 @@
+@media screen and (max-width: 960px) {
+	p {
+		font-size: 2px;
+	}
+}
+
+.nobu {
+	border-radius: 3px;
+}
+.nobu__grid {
+	height: 100% !important;
+}
+.nobu__gridItem {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	border-radius: 5px;
+	border: 1px solid yellow;
+}
+.nobu__left {
+	height: 60%;
+	margin: 65px 0;
+	width: 85%;
+	border-radius: 10px;
+	background-color: rgba(224, 223, 223, 0.336);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nobu__left > img {
+	width: 90%;
+	height: auto;
+	object-fit: contain;
+	border-radius: 5px;
+	margin-bottom: -20%;
+}
+
+.nobu__right {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 80%;
+	min-height: 80%;
+	background-color: #eff1f3;
+	border-radius: 5px;
+	padding: 30px;
+}
+.nobu__right > h1 {
+	font-size: 20px;
+}
+.nobu__right > p {
+	padding-left: 20px;
+	font-size: 15px;
+	margin: 10px 0;
+}
+.nobu__right > ul > li {
+	list-style: none;
+	padding-left: 20px;
+	font-size: 15px;
+	margin: 10px 0;
+}

@@ -1,4 +1,29 @@
 .portfolio {
-	height: 100vh;
-	background-color: rgb(167, 70, 223);
+	height: 100%;
+	background: linear-gradient(rgb(0, 159, 187), #b9dae6);
+	overflow: hidden;
+	font-family: 'Ubuntu', sans-serif;
+}
+.portfolio__title {
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.portfolio__projects {
+}
+
+.portfolio__projects > div {
+	margin: 0 auto;
+	width: 90vw;
+}
+
+.project__nobu {
+	background-color: khaki;
+}
+.project__spotify {
+	background-color: rgb(24, 133, 2);
+	height: 80vh;
+	width: 90vw;
 }
