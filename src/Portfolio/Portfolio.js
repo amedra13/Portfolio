@@ -1,11 +1,10 @@
 import React from 'react';
-import Nobu from './Projects/Nobu';
-import Spotify from './Projects/Spotify';
-import SportCards from './Projects/SportCards';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import MouseOutlinedIcon from '@material-ui/icons/MouseOutlined';
 import LazyLoad from 'react-lazyload';
+import ProjectItem from './Projects/ProjectItem';
+import projectData from './Projects/projectsData';
 import './Portfolio.css';
 
 const Portfolio = () => {
@@ -21,15 +20,11 @@ const Portfolio = () => {
 				</div>
 			</div>
 			<div className="portfolio__projects">
-				<LazyLoad height={300} once={true} offset={-200}>
-					<Nobu />
-				</LazyLoad>
-				<LazyLoad height={300} once={true} offset={-200}>
-					<Spotify />
-				</LazyLoad>
-				<LazyLoad height={300} once={true} offset={-200}>
-					<SportCards />
-				</LazyLoad>
+				{projectData.map((project) => (
+					<LazyLoad height={300} once={true} offset={-200}>
+						<ProjectItem project={project} />
+					</LazyLoad>
+				))}
 			</div>
 			<Footer />
 		</div>
