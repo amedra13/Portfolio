@@ -3,6 +3,7 @@ import Nobu from './Projects/Nobu';
 import Spotify from './Projects/Spotify';
 import SportCards from './Projects/SportCards';
 import Navbar from '../Navbar/Navbar';
+import Footer from '../Footer/Footer';
 import MouseOutlinedIcon from '@material-ui/icons/MouseOutlined';
 import LazyLoad from 'react-lazyload';
 import './Portfolio.css';
@@ -30,6 +31,7 @@ const Portfolio = () => {
 					<SportCards />
 				</LazyLoad>
 			</div>
+			<Footer />
 		</div>
 	);
 };

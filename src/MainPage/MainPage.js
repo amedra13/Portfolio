@@ -4,6 +4,7 @@ import BubblesEffect from '../BubbleEffect/BubblesEffect';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import EmailIcon from '@material-ui/icons/Email';
 
 import './MainPage.css';
 
@@ -29,6 +30,7 @@ const MainPage = () => {
 				<FacebookIcon fontSize="large" />
 				<LinkedInIcon fontSize="large" />
 				<TwitterIcon fontSize="large" />
+				<EmailIcon fontSize="large" />
 			</div>
 			<BubblesEffect />
 		</div>

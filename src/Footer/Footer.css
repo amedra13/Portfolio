@@ -1,0 +1,16 @@
+.footer {
+	height: 20vh;
+	background-color: rgb(73, 73, 73);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.footer > div {
+	display: flex;
+	margin: 20px 0;
+}
+.footer > div > * {
+	margin: 0 30px;
+}
