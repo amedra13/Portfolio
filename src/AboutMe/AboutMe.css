@@ -1,4 +1,30 @@
 .aboutMe {
 	height: 100vh;
-	background-color: rgb(49, 128, 165);
+	background: linear-gradient(rgb(35, 115, 126), #74cce9);
+}
+.aboutMe__header {
+	background-color: rgb(55, 180, 197);
+}
+.aboutMe__headerContainer {
+	width: 80% !important;
+	margin: 0 auto;
+	height: 100%;
+}
+.aboutMe__imageContainer {
+	height: 30vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+.aboutMe__imageContainer > img {
+	height: 100%;
+	object-fit: contain;
+}
+.aboutMe__gridItem {
+	height: 100%;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
 }
