@@ -2,3 +2,19 @@
 	height: 100vh;
 	background-color: rgb(223, 70, 190);
 }
+.contact__header {
+	height: 30vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	background-color: rgb(73, 73, 73);
+}
+.contact__header > * {
+	margin: 15px 0;
+	text-align: center;
+}
+.contact__header > h1 {
+	font-size: 50px;
+}

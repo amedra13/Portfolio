@@ -6,7 +6,13 @@ const Contact = () => {
 	return (
 		<div className="contact">
 			<Navbar />
-			Contact
+			<div className="contact__header">
+				<h1>Contact Me</h1>
+				<div>
+					<h3>I'd love to help!</h3>
+					<p>I'm avaible to create new and exciting projects together</p>
+				</div>
+			</div>
 		</div>
 	);
 };
