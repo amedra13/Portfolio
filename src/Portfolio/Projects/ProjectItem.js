@@ -1,6 +1,5 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
 import './ProjectItem.css';
 
 const ProjectItem = ({ project }) => {
@@ -26,7 +25,7 @@ const ProjectItem = ({ project }) => {
 							alt="Project: projectItem Palo Alto Clone"
 						/>
 					</div>
-					<Button variant="outlined">Visit Website</Button>
+					<a href={project.website}>Visit Website</a>
 				</Grid>
 				<Grid
 					className={`projectItem__gridItem  ${

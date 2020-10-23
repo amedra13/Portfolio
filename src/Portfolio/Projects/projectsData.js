@@ -16,6 +16,7 @@ const projects = [
 		],
 		reverse: false,
 		completed: true,
+		website: 'https://nobu-clone.web.app/',
 	},
 	{
 		name: 'Spotify Clone',
@@ -36,6 +37,7 @@ const projects = [
 		],
 		reverse: true,
 		completed: true,
+		website: 'https://spotify-clone-1867c.web.app/',
 	},
 	{
 		name: 'Sport Cards Collection',
@@ -56,6 +58,7 @@ const projects = [
 		],
 		reverse: false,
 		completed: false,
+		website: '/',
 	},
 ];
 
