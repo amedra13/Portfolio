@@ -8,14 +8,19 @@ const Nobu = () => {
 	return (
 		<div className="nobu">
 			<Grid className="nobu__grid" container>
-				<Grid className="nobu__gridItem bg__white" item xs={12} md={6}>
+				<Grid
+					className="nobu__gridItem bg__white slideLeft"
+					item
+					xs={12}
+					md={6}
+				>
 					<h1>Nobu Palo Alto Clone</h1>
 					<div className="nobu__left">
 						<img src={NobuImage} alt="Project: Nobu Palo Alto Clone" />
 					</div>
 					<Button variant="outlined">Visit Website</Button>
 				</Grid>
-				<Grid className="nobu__gridItem" item xs={12} md={6}>
+				<Grid className="nobu__gridItem slideRight" item xs={12} md={6}>
 					<div className="nobu__right">
 						<h1>Functionality</h1>
 						<p>

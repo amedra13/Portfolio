@@ -1,9 +1,9 @@
 import React from 'react';
 import Nobu from './Projects/Nobu';
 import Spotify from './Projects/Spotify';
-import SportCards from './Projects/SportCards'
+import SportCards from './Projects/SportCards';
 import Navbar from '../Navbar/Navbar';
-
+import LazyLoad from 'react-lazyload';
 import './Portfolio.css';
 
 const Portfolio = () => {
@@ -17,9 +17,15 @@ const Portfolio = () => {
 				</h5>
 			</div>
 			<div className="portfolio__projects">
-				<Nobu />
-				<Spotify />
-				<SportCards/>
+				<LazyLoad height={300} once={true} offset={-200}>
+					<Nobu />
+				</LazyLoad>
+				<LazyLoad height={300} once={true} offset={-200}>
+					<Spotify />
+				</LazyLoad>
+				<LazyLoad height={300} once={true} offset={-200}>
+					<SportCards />
+				</LazyLoad>
 			</div>
 		</div>
 	);

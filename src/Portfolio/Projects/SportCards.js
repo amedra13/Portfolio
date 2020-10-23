@@ -6,9 +6,14 @@ import './SportCards.css';
 
 const SportCards = () => {
 	return (
-		<div className="sportcards">
+		<div className="sportcards ">
 			<Grid className="sportcards__grid" container>
-				<Grid className="sportcards__gridItem bg__white" item xs={12} md={6}>
+				<Grid
+					className="sportcards__gridItem bg__white slideLeft"
+					item
+					xs={12}
+					md={6}
+				>
 					<h1>Upcoming: Sport Cards Collection</h1>
 					<div className="sportcards__left">
 						<img src={SportImage} alt="Project: sportcards Palo Alto Clone" />
@@ -17,7 +22,7 @@ const SportCards = () => {
 						Visit Website
 					</Button>
 				</Grid>
-				<Grid className="sportcards__gridItem" item xs={12} md={6}>
+				<Grid className="sportcards__gridItem slideRight" item xs={12} md={6}>
 					<div className="sportcards__right">
 						<h1>Expected Behavior</h1>
 						<p>

@@ -1,3 +1,23 @@
+@keyframes slide-in-left {
+	from {
+		transform: translateX(-20vw);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+@keyframes slide-in-right {
+	from {
+		transform: translateX(20vw);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
 .nobu__grid {
 	height: 100% !important;
 }
@@ -54,4 +74,10 @@
 }
 .bg__white {
 	background-color: #fdfddffd;
+}
+.slideLeft {
+	animation: slide-in-left 1.5s forwards;
+}
+.slideRight {
+	animation: slide-in-right 1.5s forwards;
 }

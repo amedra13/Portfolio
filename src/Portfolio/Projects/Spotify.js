@@ -7,15 +7,20 @@ import './Spotify.css';
 const Spotify = () => {
 	return (
 		<div className="spotify">
-			<Grid className="spotify__grid" container direction="row-reverse">
-				<Grid className="spotify__gridItem bg__white" item xs={12} md={6}>
-					<h1>Spotify Palo Alto Clone</h1>
+			<Grid className="spotify__grid " container direction="row-reverse">
+				<Grid
+					className="spotify__gridItem bg__white slideRight"
+					item
+					xs={12}
+					md={6}
+				>
+					<h1>Spotify Clone</h1>
 					<div className="spotify__left">
 						<img src={SpotifyImage} alt="Project: spotify Palo Alto Clone" />
 					</div>
 					<Button variant="outlined">Visit Website</Button>
 				</Grid>
-				<Grid className="spotify__gridItem" item xs={12} md={6}>
+				<Grid className="spotify__gridItem slideLeft" item xs={12} md={6}>
 					<div className="spotify__right">
 						<h1>Functionality</h1>
 						<p>
