@@ -4,7 +4,6 @@ import BubblesEffect from '../BubbleEffect/BubblesEffect';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
-import MouseOutlinedIcon from '@material-ui/icons/MouseOutlined';
 
 import './MainPage.css';
 
@@ -27,15 +26,9 @@ const MainPage = () => {
 				<i class="fas fa-laptop-code"></i>
 			</div>
 			<div className="main__footer">
-				<div>
-					<FacebookIcon className="main__icon" />
-					<LinkedInIcon className="main__icon" />
-					<TwitterIcon className="main__icon" />
-				</div>
-				<div>
-					<MouseOutlinedIcon className="main__mouse" />
-					<p>scroll</p>
-				</div>
+				<FacebookIcon fontSize="large" />
+				<LinkedInIcon fontSize="large" />
+				<TwitterIcon fontSize="large" />
 			</div>
 			<BubblesEffect />
 		</div>

@@ -1,3 +1,20 @@
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+	25% {
+		transform: translateY(-15px);
+	}
+	50% {
+		transform: translateY(0px);
+	}
+	75% {
+		transform: translateY(-5px);
+	}
+	100% {
+		transform: translate(0);
+	}
+}
 .portfolio {
 	height: 100%;
 	background: linear-gradient(rgb(0, 159, 187), #b9dae6);
@@ -5,11 +22,21 @@
 	font-family: 'Ubuntu', sans-serif;
 }
 .portfolio__title {
-	height: 80vh;
+	height: 90vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-evenly;
 	text-align: center;
+	color: rgb(203, 226, 235);
+}
+.portfolio__title > h1 {
+	font-size: 75px;
+}
+.portfolio__title > p {
+	font-size: 60px;
+}
+.mouse__icon {
+	animation: bounce 1.15s infinite;
 }
 
 .portfolio__projects > div {

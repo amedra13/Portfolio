@@ -1,21 +1,3 @@
-@keyframes bounce {
-	0% {
-		transform: translateY(0);
-	}
-	25% {
-		transform: translateY(-15px);
-	}
-	50% {
-		transform: translateY(0px);
-	}
-	75% {
-		transform: translateY(-5px);
-	}
-	100% {
-		transform: translate(0);
-	}
-}
-
 .main {
 	height: 100vh;
 	display: flex;
@@ -23,22 +5,22 @@
 	justify-content: space-between;
 	font-family: 'Ubuntu', sans-serif;
 	font-style: italic;
-	color: rgba(203, 226, 235, 0.822);
+	color: rgba(203, 226, 235);
 	position: relative;
 	background: linear-gradient(rgb(35, 115, 126), #74cce9);
 	overflow: hidden;
 }
-.main > * {
-	z-index: 40;
-}
+
 .main__intro {
 	font-size: 30px;
 	padding-left: 50px;
+	z-index: 10;
 }
 
 .main__title {
 	display: flex;
 	margin-left: 20%;
+	z-index: 10;
 }
 
 .main__title > div > p {
@@ -59,29 +41,13 @@
 }
 
 .main__footer {
-	width: 50%;
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
+	justify-content: center;
 	padding-left: 50px;
+	color: rgb(16, 95, 82);
 	transform: translateY(-15px);
+	z-index: 10;
 }
-
-.main__footer > div:last-child {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-}
-.main__icon {
-	margin-top: 20px;
-	display: block !important;
-	color: rgb(16, 95, 82);
-}
-.main__mouse {
-	font-size: 25px !important;
-	color: rgb(16, 95, 82);
-	animation: bounce 1.6s ease-in-out infinite;
-}
-.main__footer > div > p {
-	font-weight: bold;
+.main__footer > * {
+	margin: 0 30px;
 }
