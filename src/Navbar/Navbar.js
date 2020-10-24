@@ -1,7 +1,6 @@
 import React from 'react';
 import FontDownloadOutlinedIcon from '@material-ui/icons/FontDownloadOutlined';
 import './Navbar.css';
-// import { a } from 'react-router-dom';
 
 const Navbar = () => {
 	return (

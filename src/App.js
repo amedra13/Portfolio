@@ -3,8 +3,7 @@ import MainPage from './MainPage/MainPage';
 import AboutMe from './AboutMe/AboutMe';
 import Portfolio from './Portfolio/Portfolio';
 import Contact from './Contact/Contact';
-
-// import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Footer from './Footer/Footer';
 import './App.css';
 
 function App() {
@@ -14,6 +13,7 @@ function App() {
 			<AboutMe />
 			<Portfolio />
 			<Contact />
+			<Footer />
 		</div>
 	);
 }
