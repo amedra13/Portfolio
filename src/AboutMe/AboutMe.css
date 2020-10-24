@@ -1,20 +1,21 @@
 .aboutMe {
-	height: 100vh;
+	min-height: 100vh;
 	background-color: rgb(73, 73, 73);
 	display: flex;
 	align-items: center;
 }
+
 .aboutMe__Container {
 	border: 1px solid red;
 	width: 80% !important;
 	margin: 0 auto;
-	height: 80%;
 }
 .aboutMe__imageContainer {
 	height: 30vh;
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
+	border: 1px solid pink;
 }
 .aboutMe__imageContainer > img {
 	height: 100%;
@@ -27,4 +28,20 @@
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
+	border: 2px solid orange;
+}
+.aboutMe__gridItem > div {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	border: 1px solid green;
+}
+.aboutMe__gridItem > div > img {
+	height: 90px;
+	width: auto;
+	object-fit: contain;
+	flex-wrap: wrap;
+	margin: 10px;
 }
