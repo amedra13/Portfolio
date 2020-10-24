@@ -10,7 +10,7 @@ import './MainPage.css';
 
 const MainPage = () => {
 	return (
-		<div className="main">
+		<div id="Home" className="main">
 			<Navbar />
 			<div className="main__intro">
 				<p>Hello, welcome to my Portfolio!</p>

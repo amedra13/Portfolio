@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import PersonImage from '../images/person-placeholder.jpg';
@@ -7,8 +6,7 @@ import './AboutMe.css';
 
 const AboutMe = () => {
 	return (
-		<div className="aboutMe">
-			<Navbar />
+		<div id="About" className="aboutMe">
 			<div className="aboutMe__header">
 				<Grid className="aboutMe__headerContainer" container>
 					<Grid item xs={12} md={3}>

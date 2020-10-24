@@ -1,19 +1,19 @@
 import React from 'react';
 import FontDownloadOutlinedIcon from '@material-ui/icons/FontDownloadOutlined';
 import './Navbar.css';
-import { Link } from 'react-router-dom';
+// import { a } from 'react-router-dom';
 
 const Navbar = () => {
 	return (
 		<div className="navbar">
-			<Link to="/">
+			<a href="#Home">
 				<FontDownloadOutlinedIcon fontSize="large" />
-			</Link>
+			</a>
 			<div className="navbar__links">
-				<Link to="/">Home</Link>
-				<Link to="/about">About</Link>
-				<Link to="/portfolio">Portfolio</Link>
-				<Link to="/contact"> Contact </Link>
+				<a href="#Home">Home</a>
+				<a href="#About">About</a>
+				<a href="#Portfolio">Portfolio</a>
+				<a href="#Contact"> Contact </a>
 			</div>
 		</div>
 	);

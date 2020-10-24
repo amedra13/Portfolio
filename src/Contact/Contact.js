@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from '../Navbar/Navbar';
 import Grid from '@material-ui/core/Grid';
 import PersonPinCircleOutlinedIcon from '@material-ui/icons/PersonPinCircleOutlined';
 import PhoneAndroidOutlinedIcon from '@material-ui/icons/PhoneAndroidOutlined';
@@ -14,9 +13,9 @@ const Contact = () => {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
+
 	return (
-		<div className="contact">
-			<Navbar />
+		<div id="Contact" className="contact">
 			<div className="contact__header">
 				<h1>Contact Me</h1>
 				<div>
