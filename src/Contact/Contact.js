@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import Grid from '@material-ui/core/Grid';
 import PersonPinCircleOutlinedIcon from '@material-ui/icons/PersonPinCircleOutlined';
 import PhoneAndroidOutlinedIcon from '@material-ui/icons/PhoneAndroidOutlined';
@@ -10,9 +11,32 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import './Contact.css';
 
 const Contact = () => {
-	const [name, setName] = useState('');
-	const [email, setEmail] = useState('');
+	const [from_name, setFrom] = useState('');
+	const [from_email, setFromEmail] = useState('');
 	const [message, setMessage] = useState('');
+
+	const serviceID = 'service_qdq7ozj';
+	const templateID = 'template_l5ksq0f';
+	const templateParams = {
+		from_name: from_name,
+		from_email: from_email,
+		message: message,
+	};
+	const userID = 'user_v0mV4jJTJD5COxD4Kbxkb';
+	const sendEmail = (e) => {
+		e.preventDefault();
+		emailjs.send(serviceID, templateID, templateParams, userID).then(
+			(response) => {
+				alert('Success', response.text);
+			},
+			(error) => {
+				console.log('Error', error.text);
+			}
+		);
+		setFrom('');
+		setFromEmail('');
+		setMessage('');
+	};
 
 	return (
 		<div id="Contact" className="contact">
@@ -47,21 +71,21 @@ const Contact = () => {
 					</div>
 				</Grid>
 				<Grid item xs={12} md={6}>
-					<form className="contact__form">
+					<form className="contact__form" onSubmit={sendEmail}>
 						<p>Feel Free to say Hello!</p>
 						<input
 							type="text"
 							id="name"
 							placeholder="Name"
-							value={name}
-							onChange={(e) => setName(e.target.value)}
+							value={from_name}
+							onChange={(e) => setFrom(e.target.value)}
 						/>
 						<input
 							type="email"
 							id="email"
 							placeholder="Email"
-							value={email}
-							onChange={(e) => setEmail(e.target.value)}
+							value={from_email}
+							onChange={(e) => setFromEmail(e.target.value)}
 						/>
 						<textarea
 							type="text"
