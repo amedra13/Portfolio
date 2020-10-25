@@ -40,7 +40,9 @@ const AboutMe = () => {
 							<img src={MaterialUILogo} alt="" />
 							<img src={FirebaseLogo} alt="" />
 						</div>
-						<Button variant="outlined">Hire Me</Button>
+						<Button variant="outlined" fullWidth>
+							Hire Me
+						</Button>
 					</div>
 				</Grid>
 			</Grid>

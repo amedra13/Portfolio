@@ -2,10 +2,15 @@
 	min-height: 100vh;
 	background: linear-gradient(rgb(35, 115, 126), #74cce9);
 	font-family: 'Ubuntu', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .contact__header {
 	height: 20vh;
 	width: 80%;
+	max-width: 1600px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
@@ -14,8 +19,8 @@
 	color: white;
 	background-color: rgb(73, 73, 73);
 	border-bottom: 2px solid lightgrey;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 .contact__header > * {
 	margin: 15px 0;
@@ -27,9 +32,10 @@
 .contact__grid {
 	background-color: rgb(73, 73, 73);
 	width: 80% !important;
+	max-width: 1600px;
 	margin: 0 auto;
-	border-bottom-left-radius: 15px !important;
-	border-bottom-right-radius: 15px !important;
+	border-bottom-left-radius: 10px !important;
+	border-bottom-right-radius: 10px !important;
 }
 
 .contact__form {
@@ -118,4 +124,13 @@
 	text-align: center;
 	align-self: center;
 	flex-grow: 1;
+}
+@media only screen and (max-width: 960px) {
+	.contact {
+		padding: 30px;
+	}
+	.contact__header,
+	.contact__grid {
+		width: 100% !important;
+	}
 }

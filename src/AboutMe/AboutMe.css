@@ -8,6 +8,7 @@
 .aboutMe__Container {
 	border: 1px solid red;
 	width: 80% !important;
+	min-height: 80vh !important;
 	margin: 0 auto;
 }
 .aboutMe__imageContainer {
