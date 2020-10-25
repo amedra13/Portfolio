@@ -7,6 +7,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 import './MainPage.css';
+import { IconButton } from '@material-ui/core';
 
 const MainPage = () => {
 	return (
@@ -27,10 +28,24 @@ const MainPage = () => {
 				<i class="fas fa-laptop-code"></i>
 			</div>
 			<div className="main__footer">
-				<FacebookIcon fontSize="large" />
-				<LinkedInIcon fontSize="large" />
-				<TwitterIcon fontSize="large" />
-				<GitHubIcon fontSize="large" />
+				<IconButton
+					target="_blank"
+					href="https://www.facebook.com/andres.medrano.98"
+				>
+					<FacebookIcon fontSize="large" />
+				</IconButton>
+				<IconButton
+					target="_blank"
+					href="https://www.linkedin.com/in/andres-medrano-19ba91132/"
+				>
+					<LinkedInIcon fontSize="large" />
+				</IconButton>
+				<IconButton>
+					<TwitterIcon fontSize="large" />
+				</IconButton>
+				<IconButton target="_blank" href="https://github.com/amedra13">
+					<GitHubIcon fontSize="large" />
+				</IconButton>
 			</div>
 			<BubblesEffect />
 		</div>

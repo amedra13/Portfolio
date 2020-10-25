@@ -41,7 +41,7 @@ const AboutMe = () => {
 							<img src={FirebaseLogo} alt="" />
 						</div>
 						<Button variant="outlined" fullWidth>
-							Hire Me
+							<a href="#Contact">Hire Me</a>
 						</Button>
 					</div>
 				</Grid>

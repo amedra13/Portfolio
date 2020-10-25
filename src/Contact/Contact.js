@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import Grid from '@material-ui/core/Grid';
+import IconButton from '@material-ui/core/IconButton';
 import PersonPinCircleOutlinedIcon from '@material-ui/icons/PersonPinCircleOutlined';
 import PhoneAndroidOutlinedIcon from '@material-ui/icons/PhoneAndroidOutlined';
 import EmailOutlinedIcon from '@material-ui/icons/EmailOutlined';
@@ -14,28 +15,36 @@ const Contact = () => {
 	const [from_name, setFrom] = useState('');
 	const [from_email, setFromEmail] = useState('');
 	const [message, setMessage] = useState('');
+	const [contactMessage, setContactMessage] = useState(
+		'Feel Free to say Hello!'
+	);
 
-	const serviceID = 'service_qdq7ozj';
-	const templateID = 'template_l5ksq0f';
-	const templateParams = {
-		from_name: from_name,
-		from_email: from_email,
-		message: message,
-	};
-	const userID = 'user_v0mV4jJTJD5COxD4Kbxkb';
-	const sendEmail = (e) => {
+	const sendEmail = async (e) => {
 		e.preventDefault();
-		emailjs.send(serviceID, templateID, templateParams, userID).then(
-			(response) => {
-				alert('Success', response.text);
-			},
-			(error) => {
-				console.log('Error', error.text);
-			}
-		);
+		await emailjs
+			.sendForm(
+				'service_qdq7ozj',
+				'template_l5ksq0f',
+				'#contactMe',
+				'user_v0mV4jJTJD5COxD4Kbxkb'
+			)
+			.then(
+				(response) => {
+					setContactMessage("Thank you! I'll be in touch soon!");
+				},
+				(error) => {
+					setContactMessage(
+						'Sorry, it looks like there was an error. Please try again'
+					);
+				}
+			);
 		setFrom('');
 		setFromEmail('');
 		setMessage('');
+		const clearMessage = setTimeout(() => {
+			setContactMessage('Missed something? Send me another email!');
+		}, 5000);
+		return () => clearTimeout(clearMessage);
 	};
 
 	return (
@@ -44,7 +53,7 @@ const Contact = () => {
 				<h1>Contact Me</h1>
 				<div>
 					<h3>I'd love to help!</h3>
-					<p>I'm avaible to create new and exciting projects together</p>
+					<p>I'm available to create new and exciting projects together</p>
 				</div>
 			</div>
 			<Grid className="contact__grid" container>
@@ -60,38 +69,56 @@ const Contact = () => {
 						</div>
 						<div>
 							<EmailOutlinedIcon fontSize="large" />
-							<p>amedra13@gmail.com</p>
+							<p>andresthedev5@gmail.com</p>
 						</div>
 						<div>
-							<FacebookIcon fontSize="large" />
-							<LinkedInIcon fontSize="large" />
-							<TwitterIcon fontSize="large" />
-							<GitHubIcon fontSize="large" />
+							<IconButton
+								target="_blank"
+								href="https://www.facebook.com/andres.medrano.98"
+							>
+								<FacebookIcon fontSize="large" />
+							</IconButton>
+							<IconButton
+								target="_blank"
+								href="https://www.linkedin.com/in/andres-medrano-19ba91132/"
+							>
+								<LinkedInIcon fontSize="large" />
+							</IconButton>
+							<IconButton>
+								<TwitterIcon fontSize="large" />
+							</IconButton>
+							<IconButton target="_blank" href="https://github.com/amedra13">
+								<GitHubIcon fontSize="large" />
+							</IconButton>
 						</div>
 					</div>
 				</Grid>
 				<Grid item xs={12} md={6}>
-					<form className="contact__form" onSubmit={sendEmail}>
-						<p>Feel Free to say Hello!</p>
+					<form id="contactMe" className="contact__form" onSubmit={sendEmail}>
+						<p>{contactMessage}</p>
 						<input
 							type="text"
-							id="name"
+							name="from_name"
 							placeholder="Name"
 							value={from_name}
+							required
 							onChange={(e) => setFrom(e.target.value)}
 						/>
 						<input
 							type="email"
-							id="email"
+							name="from_email"
 							placeholder="Email"
 							value={from_email}
+							pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+							required
 							onChange={(e) => setFromEmail(e.target.value)}
 						/>
 						<textarea
 							type="text"
-							id="message"
+							name="message"
 							placeholder="Your Message"
 							value={message}
+							required
 							onChange={(e) => setMessage(e.target.value)}
 						/>
 						<button type="submit">Submit</button>
