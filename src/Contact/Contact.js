@@ -69,7 +69,7 @@ const Contact = () => {
 						</div>
 						<div>
 							<EmailOutlinedIcon fontSize="large" />
-							<p>andresthedev5@gmail.com</p>
+							<p> andresthedev5@gmail.com</p>
 						</div>
 						<div>
 							<IconButton

@@ -29,6 +29,15 @@
 	height: 80vh;
 	border-radius: 5px;
 }
+.projectItem__gridItem > a {
+	border: 2px solid white;
+	text-decoration: none;
+	width: 150px;
+	padding: 5px;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+}
 .gridImage {
 	width: 80%;
 	object-fit: contain;

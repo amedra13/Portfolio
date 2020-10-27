@@ -21,7 +21,9 @@ const ProjectItem = ({ project }) => {
 				>
 					<h1>{project.name}</h1>
 					<TiltedImage image={project.image} />
-					<a href={project.website}>Visit Website</a>
+					<a href={project.website} target="_blank" rel="noopener noreferrer">
+						Visit Website
+					</a>
 				</Grid>
 				<Grid
 					className={`projectItem__gridItem  ${

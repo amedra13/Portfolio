@@ -27,12 +27,46 @@ const AboutMe = () => {
 					<p>VideoGames</p>
 				</Grid>
 				<Grid className="aboutMe__gridRight" item xs={12} md={6}>
-					<LazyLoad height={200} once={true} offset={-200}>
-						<p>Hello my name is</p>
-					</LazyLoad>
-					<LazyLoad height={500} once={true} offset={-200}>
-						<h1>Andres Medrano</h1>
-					</LazyLoad>
+					<div>
+						<LazyLoad height={'100%'} once offset={100}>
+							<p>Hello my name is</p>
+						</LazyLoad>
+					</div>
+
+					<div>
+						<LazyLoad height={'100%'} once offset={-200}>
+							<h1>Andres Medrano</h1>
+						</LazyLoad>
+					</div>
+
+					<div>
+						<LazyLoad height={'100%'} once offset={-300}>
+							<p>
+								I'm a full-stack developer specialised in frontend and backend
+								development for complex scalable web apps. I write about web
+								development on my blog and regularly speak at various web
+								conferences and meetups. Want to know how I may help your
+								project? Check out my project case studies and resume.
+							</p>
+						</LazyLoad>
+					</div>
+					<div>
+						<img style={{ animationDelay: '0s' }} src={ReactLogo} alt="" />
+						<img style={{ animationDelay: '0.2s' }} src={ReduxLogo} alt="" />
+						<img
+							style={{ animationDelay: '0.4s' }}
+							src={ReactRouterLogo}
+							alt=""
+						/>
+						<img style={{ animationDelay: '0.6s' }} src={RestApiLogo} alt="" />
+						<img
+							style={{ animationDelay: '0.8s' }}
+							src={MaterialUILogo}
+							alt=""
+						/>
+						<img style={{ animationDelay: '1s' }} src={FirebaseLogo} alt="" />
+					</div>
+
 					{/* <div className="aboutMe__gridItem">
 						<LazyLoad height={200} once={true} offset={-200}>
 							<p>Hello my name is</p>
