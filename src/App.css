@@ -37,15 +37,3 @@ body {
 	text-align: center;
 	font-family: 'Ubuntu', sans-serif;
 }
-.test {
-	height: 100vh;
-	background-color: lavenderblush;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.inner {
-	border: 10px solid green;
-	height: 80%;
-	width: 80%;
-}

@@ -16,13 +16,24 @@ const AboutMe = () => {
 	return (
 		<div id="About" className="aboutMe">
 			<Grid className="aboutMe__Container" container>
-				<Grid item xs={12} md={6}>
+				<Grid className="aboutMe__gridLeft" item xs={12} md={6}>
 					<div className="aboutMe__imageContainer">
-						<img className="aboutMe__image" src={PersonImage} alt="Andres" />
+						<img src={PersonImage} alt="Andres" />
 					</div>
+					<h2>Interests:</h2>
+					<p>Sports Cards</p>
+					<p>Coding</p>
+					<p>Eating</p>
+					<p>VideoGames</p>
 				</Grid>
-				<Grid item xs={12} md={6}>
-					<div className="aboutMe__gridItem">
+				<Grid className="aboutMe__gridRight" item xs={12} md={6}>
+					<LazyLoad height={200} once={true} offset={-200}>
+						<p>Hello my name is</p>
+					</LazyLoad>
+					<LazyLoad height={500} once={true} offset={-200}>
+						<h1>Andres Medrano</h1>
+					</LazyLoad>
+					{/* <div className="aboutMe__gridItem">
 						<LazyLoad height={200} once={true} offset={-200}>
 							<p>Hello my name is</p>
 						</LazyLoad>
@@ -39,21 +50,52 @@ const AboutMe = () => {
 								project? Check out my project case studies and resume.
 							</p>
 						</LazyLoad>
-						<LazyLoad height={300} once={true} offset={-200}>
+						<LazyLoad height={400} once={true} offset={-200}>
 							<h1>Experience with...</h1>
 						</LazyLoad>
-						<div>
-							<img src={ReactLogo} alt="" />
-							<img src={ReduxLogo} alt="" />
-							<img src={ReactRouterLogo} alt="" />
-							<img src={RestApiLogo} alt="" />
-							<img src={MaterialUILogo} alt="" />
-							<img src={FirebaseLogo} alt="" />
-						</div>
-						<Button variant="outlined" fullWidth>
+						<LazyLoad height={400} once={true} offset={-200}>
+							<ul style={{ border: '2px solid pink' }}>
+								<li className="test" style={{ animationDelay: '0.2s' }}>
+									test
+								</li>
+								<li className="test" style={{ animationDelay: '0.4s' }}>
+									test
+								</li>
+								<li className="test" style={{ animationDelay: '0.6s' }}>
+									test
+								</li>
+								<li className="test" style={{ animationDelay: '0.8s' }}>
+									test
+								</li>
+								<li className="test" style={{ animationDelay: '1s' }}>
+									test
+								</li>
+							</ul>
+						</LazyLoad> */}
+					{/* <div>
+							<img style={{ animationDelay: '0s' }} src={ReactLogo} alt="" />
+							<img style={{ animationDelay: '0.2s' }} src={ReduxLogo} alt="" />
+							<img
+								style={{ animationDelay: '0.4s' }}
+								src={ReactRouterLogo}
+								alt=""
+							/>
+							<img
+								style={{ animationDelay: '0.6s' }}
+								src={RestApiLogo}
+								alt=""
+							/>
+							<img
+								style={{ animationDelay: '0.8s' }}
+								src={MaterialUILogo}
+								alt=""
+							/>
+							<img style={{ animationDelay: '1s' }} src={FirebaseLogo} alt="" />
+						</div> */}
+					{/* <Button variant="outlined" fullWidth>
 							<a href="#Contact">Hire Me</a>
 						</Button>
-					</div>
+					</div> */}
 				</Grid>
 			</Grid>
 		</div>

@@ -8,6 +8,17 @@
 		transform: translateY(0);
 	}
 }
+
+@keyframes slide-in-right {
+	from {
+		transform: translateX(20vw);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
 .aboutMe {
 	height: 100vh;
 	background-color: rgb(73, 73, 73);
@@ -20,41 +31,50 @@
 	width: 80% !important;
 	height: 80% !important;
 	margin: 0 auto;
+	border: 2px solid pink;
+}
+.aboutMe__gridLeft {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .aboutMe__imageContainer {
-	height: 30vh;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
+	height: 50%;
 }
 .aboutMe__imageContainer > img {
-	margin-top: 30px;
 	height: 100%;
 	object-fit: contain;
 }
-.aboutMe__gridItem {
-	height: 100%;
+
+.aboutMe__gridRight {
 	padding: 15px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: flex-start;
 }
-.aboutMe__gridItem > div {
+.aboutMe__gridRight h1,
+p {
+	animation: text-slideIn 500ms ease-in forwards;
+}
+
+/* .aboutMe__gridItem > div {
 	width: 100%;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	flex-wrap: wrap;
-}
-.aboutMe__gridItem > div > p,
-h1 {
-	animation: text-slideIn 500ms ease-in forwards;
-}
+} */
+
 .aboutMe__gridItem > div > img {
 	height: 90px;
 	width: auto;
 	object-fit: contain;
 	flex-wrap: wrap;
 	margin: 10px;
+	animation: slide-in-right 500ms ease-in;
+}
+.test {
+	animation: slide-in-right 1s ease-in forwards;
 }
