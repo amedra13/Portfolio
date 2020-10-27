@@ -6,15 +6,17 @@
 html {
 	scroll-behavior: smooth;
 }
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
 ::-webkit-scrollbar {
 	display: none; /* Chrome Safari */
 }
-.app {
-	width: 100vw;
-}
+
 .app__main {
 	position: relative;
-	height: 100vh;
 	background: linear-gradient(rgb(35, 115, 126), #74cce9);
 	overflow: hidden;
 }
@@ -34,4 +36,16 @@ html {
 	font-size: 120px;
 	text-align: center;
 	font-family: 'Ubuntu', sans-serif;
+}
+.test {
+	height: 100vh;
+	background-color: lavenderblush;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.inner {
+	border: 10px solid green;
+	height: 80%;
+	width: 80%;
 }

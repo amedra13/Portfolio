@@ -1,5 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
+import TiltedImage from '../../TiltEffect/TiltEffect';
 import './ProjectItem.css';
 
 const ProjectItem = ({ project }) => {
@@ -19,12 +20,7 @@ const ProjectItem = ({ project }) => {
 					md={6}
 				>
 					<h1>{project.name}</h1>
-					<div className="projectItem__left">
-						<img
-							src={project.image}
-							alt="Project: projectItem Palo Alto Clone"
-						/>
-					</div>
+					<TiltedImage image={project.image} />
 					<a href={project.website}>Visit Website</a>
 				</Grid>
 				<Grid

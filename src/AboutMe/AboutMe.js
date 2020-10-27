@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import PersonImage from '../images/person-placeholder.jpg';
@@ -22,16 +23,25 @@ const AboutMe = () => {
 				</Grid>
 				<Grid item xs={12} md={6}>
 					<div className="aboutMe__gridItem">
-						<p>Hello my name is</p>
-						<h1>Andres Medrano</h1>
-						<p>
-							I'm a full-stack developer specialised in frontend and backend
-							development for complex scalable web apps. I write about web
-							development on my blog and regularly speak at various web
-							conferences and meetups. Want to know how I may help your project?
-							Check out my project case studies and resume.
-						</p>
-						<h1>Experience with...</h1>
+						<LazyLoad height={200} once={true} offset={-200}>
+							<p>Hello my name is</p>
+						</LazyLoad>
+
+						<LazyLoad height={500} once={true} offset={-200}>
+							<h1>Andres Medrano</h1>
+						</LazyLoad>
+						<LazyLoad height={500} once={true} offset={-200}>
+							<p>
+								I'm a full-stack developer specialised in frontend and backend
+								development for complex scalable web apps. I write about web
+								development on my blog and regularly speak at various web
+								conferences and meetups. Want to know how I may help your
+								project? Check out my project case studies and resume.
+							</p>
+						</LazyLoad>
+						<LazyLoad height={300} once={true} offset={-200}>
+							<h1>Experience with...</h1>
+						</LazyLoad>
 						<div>
 							<img src={ReactLogo} alt="" />
 							<img src={ReduxLogo} alt="" />
