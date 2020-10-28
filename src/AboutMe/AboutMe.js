@@ -1,7 +1,6 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
 import Grid from '@material-ui/core/Grid';
-import Button from '@material-ui/core/Button';
 import PersonImage from '../images/person-placeholder.jpg';
 import ReactLogo from '../images/react_logo.png';
 import ReduxLogo from '../images/redux_logo.png';
@@ -28,19 +27,9 @@ const AboutMe = () => {
 				</Grid>
 				<Grid className="aboutMe__gridRight" item xs={12} md={6}>
 					<div>
-						<LazyLoad height={'100%'} once offset={100}>
+						<LazyLoad height={500} once={true} offset={-100}>
 							<p>Hello my name is</p>
-						</LazyLoad>
-					</div>
-
-					<div>
-						<LazyLoad height={'100%'} once offset={-200}>
 							<h1>Andres Medrano</h1>
-						</LazyLoad>
-					</div>
-
-					<div>
-						<LazyLoad height={'100%'} once offset={-300}>
 							<p>
 								I'm a full-stack developer specialised in frontend and backend
 								development for complex scalable web apps. I write about web
@@ -48,24 +37,64 @@ const AboutMe = () => {
 								conferences and meetups. Want to know how I may help your
 								project? Check out my project case studies and resume.
 							</p>
+							<h1>Experience with...</h1>
+							<div className="skills_container">
+								<img
+									style={{ animationDuration: '0s' }}
+									src={ReactLogo}
+									alt=""
+								/>
+								<img
+									style={{ animationDuration: '0.2s' }}
+									src={ReduxLogo}
+									alt=""
+								/>
+								<img
+									style={{ animationDuration: '0.4s' }}
+									src={ReactRouterLogo}
+									alt=""
+								/>
+								<img
+									style={{ animationDuration: '0.6s' }}
+									src={RestApiLogo}
+									alt=""
+								/>
+								<img
+									style={{ animationDuration: '0.8s' }}
+									src={MaterialUILogo}
+									alt=""
+								/>
+								<img
+									style={{ animationDuration: '0.8s' }}
+									src={FirebaseLogo}
+									alt=""
+								/>
+							</div>
+							<a className="hire_me" href="#Contact">
+								Hire Me
+							</a>
 						</LazyLoad>
 					</div>
-					<div>
-						<img style={{ animationDelay: '0s' }} src={ReactLogo} alt="" />
-						<img style={{ animationDelay: '0.2s' }} src={ReduxLogo} alt="" />
-						<img
-							style={{ animationDelay: '0.4s' }}
-							src={ReactRouterLogo}
-							alt=""
-						/>
-						<img style={{ animationDelay: '0.6s' }} src={RestApiLogo} alt="" />
-						<img
-							style={{ animationDelay: '0.8s' }}
-							src={MaterialUILogo}
-							alt=""
-						/>
-						<img style={{ animationDelay: '1s' }} src={FirebaseLogo} alt="" />
-					</div>
+					{/* <div>
+							<img style={{ animationDelay: '0s' }} src={ReactLogo} alt="" />
+							<img style={{ animationDelay: '0.2s' }} src={ReduxLogo} alt="" />
+							<img
+								style={{ animationDelay: '0.4s' }}
+								src={ReactRouterLogo}
+								alt=""
+							/>
+							<img
+								style={{ animationDelay: '0.6s' }}
+								src={RestApiLogo}
+								alt=""
+							/>
+							<img
+								style={{ animationDelay: '0.8s' }}
+								src={MaterialUILogo}
+								alt=""
+							/>
+							<img style={{ animationDelay: '1s' }} src={FirebaseLogo} alt="" />
+						</div> */}
 
 					{/* <div className="aboutMe__gridItem">
 						<LazyLoad height={200} once={true} offset={-200}>

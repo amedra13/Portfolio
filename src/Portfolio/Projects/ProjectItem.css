@@ -37,6 +37,11 @@
 	border-radius: 5px;
 	text-align: center;
 	color: white;
+	transition: all 0.2s ease-in-out;
+}
+.projectItem__gridItem > a:hover {
+	background-color: white;
+	color: black;
 }
 .gridImage {
 	width: 80%;

@@ -1,7 +1,7 @@
 @keyframes text-slideIn {
 	from {
 		opacity: 0;
-		transform: translateY(70px);
+		transform: translateY(20px);
 	}
 	to {
 		opacity: 1;
@@ -51,19 +51,33 @@
 	padding: 15px;
 }
 .aboutMe__gridRight > div {
-	border: 1px solid red;
-	height: 20%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
 }
-.aboutMe__gridRight > div > * {
+.aboutMe__gridRight > div p {
 	animation: text-slideIn 1s ease-in-out forwards;
+	margin: 20px 0;
 }
-.aboutMe__gridRight > div:last-child > img {
-	height: 100px;
-	width: 100px;
-	object-fit: contain;
+.aboutMe__gridRight > div h1 {
+	animation: text-slideIn 1s ease-in-out forwards;
+	margin: 30px 0;
 }
-.aboutMe__gridRight > div:last-child > * {
-	animation: slide-in-right 1s ease-in forwards;
+
+.aboutMe__gridRight > div a {
+	border: 2px solid white;
+	text-decoration: none;
+	border-radius: 5px;
+	width: 40%;
+	padding: 3px 0;
+	margin: 10px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	transition: all 0.2s ease-in-out;
 }
 
 /* .aboutMe__gridItem > div {
@@ -80,8 +94,12 @@
 	object-fit: contain;
 	flex-wrap: wrap;
 	margin: 10px;
-	animation: slide-in-right 500ms ease-in;
+	animation: slide-in-right ease-in;
 }
-.test {
+
+.skills_container > img {
+	width: 150px;
+	height: 100px;
+	object-fit: contain;
 	animation: slide-in-right 1s ease-in forwards;
 }
