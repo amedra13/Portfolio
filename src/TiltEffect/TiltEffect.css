@@ -1,10 +1,12 @@
 .tilt {
 	width: 80%;
 	max-width: 750px;
+	max-height: 70%;
+	overflow: hidden;
+	box-shadow: 0px 0px 30px #4b4b4b, 0px 0px 30px #8b8b8ba6;
 }
 
 .tiltedImage {
 	width: 100%;
 	object-fit: contain;
-	box-shadow: 0px 0px 30px #4b4b4b, 0px 0px 30px #8b8b8ba6;
 }

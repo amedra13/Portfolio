@@ -28,6 +28,7 @@
 	align-items: center;
 	height: 80vh;
 	border-radius: 5px;
+	color: white;
 }
 .projectItem__gridItem > a {
 	border: 2px solid white;
@@ -58,6 +59,7 @@
 	background-color: #fdfddffd;
 	border-radius: 5px;
 	padding: 30px;
+	color: black;
 }
 .projectItem__right > h1 {
 	font-size: 20px;

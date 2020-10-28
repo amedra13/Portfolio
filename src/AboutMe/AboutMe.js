@@ -38,42 +38,44 @@ const AboutMe = () => {
 								project? Check out my project case studies and resume.
 							</p>
 							<h1>Experience with...</h1>
-							<div className="skills_container">
+						</LazyLoad>
+						<div className="skills_container">
+							<LazyLoad height={400} once={true} offset={-100}>
 								<img
-									style={{ animationDuration: '0s' }}
+									style={{ animationDuration: '0.2s' }}
 									src={ReactLogo}
 									alt=""
 								/>
 								<img
-									style={{ animationDuration: '0.2s' }}
+									style={{ animationDuration: '0.4s' }}
 									src={ReduxLogo}
 									alt=""
 								/>
 								<img
-									style={{ animationDuration: '0.4s' }}
+									style={{ animationDuration: '0.6s' }}
 									src={ReactRouterLogo}
 									alt=""
 								/>
 								<img
-									style={{ animationDuration: '0.6s' }}
+									style={{ animationDuration: '0.8s' }}
 									src={RestApiLogo}
 									alt=""
 								/>
 								<img
-									style={{ animationDuration: '0.8s' }}
+									style={{ animationDuration: '1s' }}
 									src={MaterialUILogo}
 									alt=""
 								/>
 								<img
-									style={{ animationDuration: '0.8s' }}
+									style={{ animationDuration: '1.2s' }}
 									src={FirebaseLogo}
 									alt=""
 								/>
-							</div>
-							<a className="hire_me" href="#Contact">
-								Hire Me
-							</a>
-						</LazyLoad>
+							</LazyLoad>
+						</div>
+						<a className="hire_me" href="#Contact">
+							Hire Me
+						</a>
 					</div>
 					{/* <div>
 							<img style={{ animationDelay: '0s' }} src={ReactLogo} alt="" />
