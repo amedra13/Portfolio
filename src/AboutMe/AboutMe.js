@@ -14,20 +14,20 @@ import './AboutMe.css';
 const AboutMe = () => {
 	return (
 		<div id="About" className="aboutMe">
-			<Grid className="aboutMe__Container" container>
-				<Grid className="aboutMe__gridLeft" item xs={12} md={6}>
-					<div className="aboutMe__imageContainer">
-						<img src={PersonImage} alt="Andres" />
-					</div>
-					<h2>Interests:</h2>
-					<p>Sports Cards</p>
-					<p>Coding</p>
-					<p>Eating</p>
-					<p>VideoGames</p>
-				</Grid>
-				<Grid className="aboutMe__gridRight" item xs={12} md={6}>
-					<div>
-						<LazyLoad height={500} once={true} offset={-100}>
+			<LazyLoad height={500} once={true} offset={50}>
+				<Grid className="aboutMe__Container" container>
+					<Grid className="aboutMe__gridLeft" item xs={12} md={6}>
+						<div className="aboutMe__imageContainer">
+							<img src={PersonImage} alt="Andres" />
+						</div>
+						<h2>Interests:</h2>
+						<p>Sports Cards</p>
+						<p>Coding</p>
+						<p>Eating</p>
+						<p>VideoGames</p>
+					</Grid>
+					<Grid className="aboutMe__gridRight" item xs={12} md={6}>
+						<div>
 							<p>Hello my name is</p>
 							<h1>Andres Medrano</h1>
 							<p>
@@ -37,50 +37,50 @@ const AboutMe = () => {
 								conferences and meetups. Want to know how I may help your
 								project? Check out my project case studies and resume.
 							</p>
-						</LazyLoad>
-					</div>
-				</Grid>
-				<Grid item xs={12}>
-					<div className="skills_container">
-						<h1>Experience with...</h1>
-						<LazyLoad height={400} once={true} offset={-100}>
+						</div>
+					</Grid>
+					<Grid item xs={12}>
+						<div className="skills_container">
+							<h1>Experience with...</h1>
 							<img
-								style={{ animationDuration: '0.2s' }}
+								style={{ animationDuration: '0.6s' }}
 								src={ReactLogo}
 								alt=""
 							/>
 							<img
-								style={{ animationDuration: '0.4s' }}
+								style={{ animationDuration: '0.8s' }}
 								src={ReduxLogo}
 								alt=""
 							/>
 							<img
-								style={{ animationDuration: '0.6s' }}
+								style={{ animationDuration: '1s' }}
 								src={ReactRouterLogo}
 								alt=""
 							/>
 							<img
-								style={{ animationDuration: '0.8s' }}
+								style={{ animationDuration: '1.2s' }}
 								src={RestApiLogo}
 								alt=""
 							/>
 							<img
-								style={{ animationDuration: '1s' }}
+								style={{ animationDuration: '1.4s' }}
 								src={MaterialUILogo}
 								alt=""
 							/>
 							<img
-								style={{ animationDuration: '1.2s' }}
+								style={{ animationDuration: '1.6s' }}
 								src={FirebaseLogo}
 								alt=""
 							/>
-						</LazyLoad>
-					</div>
-					<a className="hire_me" href="#Contact">
-						Hire Me
-					</a>
+						</div>
+						<div className="buttonContainer">
+							<a className="hire_me" href="#Contact">
+								Need a Developer?
+							</a>
+						</div>
+					</Grid>
 				</Grid>
-			</Grid>
+			</LazyLoad>
 		</div>
 	);
 };

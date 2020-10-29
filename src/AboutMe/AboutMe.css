@@ -20,7 +20,7 @@
 	}
 }
 .aboutMe {
-	height: 100vh;
+	min-height: 100vh;
 	background-color: rgb(73, 73, 73);
 	display: flex;
 	justify-content: center;
@@ -29,7 +29,7 @@
 
 .aboutMe__Container {
 	width: 80% !important;
-	height: 80% !important;
+	min-height: 80% !important;
 	margin: 0 auto;
 	border: 2px solid pink;
 }
@@ -54,8 +54,8 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
+	justify-content: center;
+	align-items: flex-start;
 }
 .aboutMe__gridRight > div p {
 	animation: text-slideIn 1s ease-in-out forwards;
@@ -81,8 +81,10 @@
 }
 
 .skills_container {
-	width: 100%;
-	height: 250px;
+	width: 80%;
+	min-height: 200px;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .skills_container img {
@@ -90,4 +92,23 @@
 	height: 100px;
 	object-fit: contain;
 	animation: slide-in-right ease-in;
+}
+.buttonContainer {
+	width: 80%;
+	margin: 10px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hire_me {
+	border: 2px solid white;
+	text-decoration: none;
+	padding: 3px 50px;
+	border-radius: 5px;
+	color: white;
+	transition: all 0.2s ease-in-out;
+}
+.hire_me:hover {
+	background-color: white;
+	color: black;
 }
