@@ -58,7 +58,7 @@ const projects = [
 		],
 		reverse: false,
 		completed: false,
-		website: '/',
+		website: 'https://card-tracker-e5a91.firebaseapp.com/',
 	},
 ];
 

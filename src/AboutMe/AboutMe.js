@@ -37,130 +37,48 @@ const AboutMe = () => {
 								conferences and meetups. Want to know how I may help your
 								project? Check out my project case studies and resume.
 							</p>
-							<h1>Experience with...</h1>
 						</LazyLoad>
-						<div className="skills_container">
-							<LazyLoad height={400} once={true} offset={-100}>
-								<img
-									style={{ animationDuration: '0.2s' }}
-									src={ReactLogo}
-									alt=""
-								/>
-								<img
-									style={{ animationDuration: '0.4s' }}
-									src={ReduxLogo}
-									alt=""
-								/>
-								<img
-									style={{ animationDuration: '0.6s' }}
-									src={ReactRouterLogo}
-									alt=""
-								/>
-								<img
-									style={{ animationDuration: '0.8s' }}
-									src={RestApiLogo}
-									alt=""
-								/>
-								<img
-									style={{ animationDuration: '1s' }}
-									src={MaterialUILogo}
-									alt=""
-								/>
-								<img
-									style={{ animationDuration: '1.2s' }}
-									src={FirebaseLogo}
-									alt=""
-								/>
-							</LazyLoad>
-						</div>
-						<a className="hire_me" href="#Contact">
-							Hire Me
-						</a>
 					</div>
-					{/* <div>
-							<img style={{ animationDelay: '0s' }} src={ReactLogo} alt="" />
-							<img style={{ animationDelay: '0.2s' }} src={ReduxLogo} alt="" />
+				</Grid>
+				<Grid item xs={12}>
+					<div className="skills_container">
+						<h1>Experience with...</h1>
+						<LazyLoad height={400} once={true} offset={-100}>
 							<img
-								style={{ animationDelay: '0.4s' }}
+								style={{ animationDuration: '0.2s' }}
+								src={ReactLogo}
+								alt=""
+							/>
+							<img
+								style={{ animationDuration: '0.4s' }}
+								src={ReduxLogo}
+								alt=""
+							/>
+							<img
+								style={{ animationDuration: '0.6s' }}
 								src={ReactRouterLogo}
 								alt=""
 							/>
 							<img
-								style={{ animationDelay: '0.6s' }}
+								style={{ animationDuration: '0.8s' }}
 								src={RestApiLogo}
 								alt=""
 							/>
 							<img
-								style={{ animationDelay: '0.8s' }}
+								style={{ animationDuration: '1s' }}
 								src={MaterialUILogo}
 								alt=""
 							/>
-							<img style={{ animationDelay: '1s' }} src={FirebaseLogo} alt="" />
-						</div> */}
-
-					{/* <div className="aboutMe__gridItem">
-						<LazyLoad height={200} once={true} offset={-200}>
-							<p>Hello my name is</p>
-						</LazyLoad>
-
-						<LazyLoad height={500} once={true} offset={-200}>
-							<h1>Andres Medrano</h1>
-						</LazyLoad>
-						<LazyLoad height={500} once={true} offset={-200}>
-							<p>
-								I'm a full-stack developer specialised in frontend and backend
-								development for complex scalable web apps. I write about web
-								development on my blog and regularly speak at various web
-								conferences and meetups. Want to know how I may help your
-								project? Check out my project case studies and resume.
-							</p>
-						</LazyLoad>
-						<LazyLoad height={400} once={true} offset={-200}>
-							<h1>Experience with...</h1>
-						</LazyLoad>
-						<LazyLoad height={400} once={true} offset={-200}>
-							<ul style={{ border: '2px solid pink' }}>
-								<li className="test" style={{ animationDelay: '0.2s' }}>
-									test
-								</li>
-								<li className="test" style={{ animationDelay: '0.4s' }}>
-									test
-								</li>
-								<li className="test" style={{ animationDelay: '0.6s' }}>
-									test
-								</li>
-								<li className="test" style={{ animationDelay: '0.8s' }}>
-									test
-								</li>
-								<li className="test" style={{ animationDelay: '1s' }}>
-									test
-								</li>
-							</ul>
-						</LazyLoad> */}
-					{/* <div>
-							<img style={{ animationDelay: '0s' }} src={ReactLogo} alt="" />
-							<img style={{ animationDelay: '0.2s' }} src={ReduxLogo} alt="" />
 							<img
-								style={{ animationDelay: '0.4s' }}
-								src={ReactRouterLogo}
+								style={{ animationDuration: '1.2s' }}
+								src={FirebaseLogo}
 								alt=""
 							/>
-							<img
-								style={{ animationDelay: '0.6s' }}
-								src={RestApiLogo}
-								alt=""
-							/>
-							<img
-								style={{ animationDelay: '0.8s' }}
-								src={MaterialUILogo}
-								alt=""
-							/>
-							<img style={{ animationDelay: '1s' }} src={FirebaseLogo} alt="" />
-						</div> */}
-					{/* <Button variant="outlined" fullWidth>
-							<a href="#Contact">Hire Me</a>
-						</Button>
-					</div> */}
+						</LazyLoad>
+					</div>
+					<a className="hire_me" href="#Contact">
+						Hire Me
+					</a>
 				</Grid>
 			</Grid>
 		</div>
