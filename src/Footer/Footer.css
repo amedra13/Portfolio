@@ -1,9 +1,19 @@
 .footer {
-	height: 8vh;
 	background-color: rgb(73, 73, 73);
 	color: white;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	font-size: 8px;
+	padding: 10px;
+}
+.footer__iconContainer {
+	width: 50%;
+	display: flex;
+	justify-content: space-evenly;
+}
+.footer__iconContainer a {
+	border: 1px solid white;
+	color: white;
 }

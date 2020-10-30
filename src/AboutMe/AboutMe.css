@@ -29,9 +29,8 @@
 
 .aboutMe__Container {
 	width: 80% !important;
-	min-height: 80% !important;
-	margin: 0 auto;
-	border: 2px solid pink;
+	margin: 0px auto;
+	border: 5px solid pink;
 }
 .aboutMe__gridLeft {
 	display: flex;
@@ -47,41 +46,22 @@
 	object-fit: contain;
 }
 
-.aboutMe__gridRight {
-	padding: 15px;
-}
 .aboutMe__gridRight > div {
 	height: 100%;
+	padding: 30px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-}
-.aboutMe__gridRight > div p {
-	animation: text-slideIn 1s ease-in-out forwards;
-	margin: 20px 0;
-}
-.aboutMe__gridRight > div h1 {
-	animation: text-slideIn 1s ease-in-out forwards;
-	margin: 30px 0;
-}
-
-.aboutMe__gridRight > div a {
-	border: 2px solid white;
-	text-decoration: none;
-	border-radius: 5px;
-	width: 40%;
-	padding: 3px 0;
-	margin: 10px auto;
-	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
-	color: white;
-	transition: all 0.2s ease-in-out;
+}
+.aboutMe__gridRight > div > * {
+	animation: text-slideIn 1s 350ms ease-in-out forwards;
+	opacity: 0;
+	margin: 25px 0;
 }
 
 .skills_container {
-	width: 80%;
+	width: 90%;
 	min-height: 200px;
 	margin: 0 auto;
 	text-align: center;
@@ -90,25 +70,25 @@
 .skills_container img {
 	width: 150px;
 	height: 100px;
+	margin: 10px;
 	object-fit: contain;
-	animation: slide-in-right ease-in;
+	opacity: 0;
+	animation: slide-in-right 500ms ease-in forwards;
 }
-.buttonContainer {
-	width: 80%;
-	margin: 10px auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.hire_me {
+
+.skills_container a {
+	display: block;
+	width: 30%;
+	min-width: 300px;
+	margin: 30px auto;
+	padding: 5px 0;
 	border: 2px solid white;
 	text-decoration: none;
-	padding: 3px 50px;
 	border-radius: 5px;
 	color: white;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
-.hire_me:hover {
+.skills_container a:hover {
 	background-color: white;
 	color: black;
 }

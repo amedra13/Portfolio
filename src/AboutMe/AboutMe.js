@@ -14,7 +14,7 @@ import './AboutMe.css';
 const AboutMe = () => {
 	return (
 		<div id="About" className="aboutMe">
-			<LazyLoad height={500} once={true} offset={50}>
+			<LazyLoad height={500} once={true} offset={150}>
 				<Grid className="aboutMe__Container" container>
 					<Grid className="aboutMe__gridLeft" item xs={12} md={6}>
 						<div className="aboutMe__imageContainer">
@@ -42,41 +42,29 @@ const AboutMe = () => {
 					<Grid item xs={12}>
 						<div className="skills_container">
 							<h1>Experience with...</h1>
+							<img style={{ animationDelay: '800ms' }} src={ReactLogo} alt="" />
+							<img style={{ animationDelay: '900ms' }} src={ReduxLogo} alt="" />
 							<img
-								style={{ animationDuration: '0.6s' }}
-								src={ReactLogo}
-								alt=""
-							/>
-							<img
-								style={{ animationDuration: '0.8s' }}
-								src={ReduxLogo}
-								alt=""
-							/>
-							<img
-								style={{ animationDuration: '1s' }}
+								style={{ animationDelay: '1000ms' }}
 								src={ReactRouterLogo}
 								alt=""
 							/>
 							<img
-								style={{ animationDuration: '1.2s' }}
+								style={{ animationDelay: '1100ms' }}
 								src={RestApiLogo}
 								alt=""
 							/>
 							<img
-								style={{ animationDuration: '1.4s' }}
+								style={{ animationDelay: '1200ms' }}
 								src={MaterialUILogo}
 								alt=""
 							/>
 							<img
-								style={{ animationDuration: '1.6s' }}
+								style={{ animationDelay: '1300ms' }}
 								src={FirebaseLogo}
 								alt=""
 							/>
-						</div>
-						<div className="buttonContainer">
-							<a className="hire_me" href="#Contact">
-								Need a Developer?
-							</a>
+							<a href="#Contact">Need a Developer?</a>
 						</div>
 					</Grid>
 				</Grid>
