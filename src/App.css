@@ -3,6 +3,9 @@
 	margin: 0;
 	padding: 0;
 }
+:root {
+	--main-font: 'Barlow Condensed', sans-serif;
+}
 html {
 	scroll-behavior: smooth;
 }

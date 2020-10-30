@@ -29,6 +29,7 @@
 	height: 80vh;
 	border-radius: 5px;
 	color: white;
+	font-family: var(--main-font);
 }
 .projectItem__gridItem > a {
 	border: 2px solid white;

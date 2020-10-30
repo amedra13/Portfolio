@@ -1,53 +1,63 @@
-.main {
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	font-family: 'Ubuntu', sans-serif;
-	font-style: italic;
-	color: rgba(203, 226, 235);
-	position: relative;
-	background: linear-gradient(rgb(35, 115, 126), #74cce9);
-	overflow: hidden;
+@keyframes bounce {
+	0% {
+		transform: translateY(0);
+	}
+	25% {
+		transform: translateY(-15px);
+	}
+	50% {
+		transform: translateY(0px);
+	}
+	75% {
+		transform: translateY(-5px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
 }
 
-.main__intro {
-	font-size: 30px;
-	padding-left: 50px;
-	z-index: 10;
+.main {
+	height: 100vh;
+	font-family: var(--main-font);
+	background: url('../images/background.jpg');
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: none;
+	overflow: hidden;
+	position: relative;
 }
 
 .main__title {
 	display: flex;
-	margin-left: 20%;
-	z-index: 10;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
 }
 
 .main__title > div > p {
 	font-size: 200px;
-	background: -webkit-linear-gradient(45deg, rgb(16, 95, 82), #048cb9);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-.main__title > div > p:first-child {
-	margin-bottom: -100px;
-	margin-left: -30px;
-}
-.main__title > i {
-	font-size: 250px;
-	background: -webkit-linear-gradient(45deg, rgb(16, 95, 82), #048cb9);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	font-weight: 500;
+	text-align: center;
+	line-height: 80%;
+	color: white;
+	-webkit-text-stroke: 1px black;
+	margin: 0;
 }
 
-.main__footer {
-	display: flex;
-	justify-content: center;
-	padding-left: 50px;
-	color: rgb(16, 95, 82);
-	transform: translateY(-15px);
-	z-index: 10;
+.main__title > p {
+	font-size: 30px;
+	margin-top: 30px;
+	color: #f5f5f5;
 }
-.main__footer > * {
-	margin: 0 30px;
+.mouse_icon {
+	color: #f5f5f5;
+	position: absolute;
+	bottom: 2%;
+	left: 50%;
+	animation: bounce 1100ms ease-in infinite;
 }

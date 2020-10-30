@@ -5,6 +5,7 @@
 	height: 10vh;
 	width: 90vw;
 	margin: 0 auto;
+	font-family: var(--main-font);
 }
 .navbar > * {
 	z-index: 100;
@@ -21,7 +22,6 @@
 	color: rgba(203, 226, 235, 0.822);
 	font-size: 20px;
 	font-weight: bold;
-	font-family: 'Ubuntu', sans-serif;
 }
 
 .navbar__links > a::before {

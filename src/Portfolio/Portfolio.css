@@ -16,18 +16,21 @@
 	}
 }
 .portfolio {
-	background: linear-gradient(rgb(0, 159, 187), #b9dae6);
+	background: url('../images/background.jpg');
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: none;
 	overflow: hidden;
 	font-family: 'Ubuntu', sans-serif;
 }
 .portfolio__title {
-	height: 100vh;
+	height: 20vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	text-align: center;
 	color: rgb(203, 226, 235);
-	border: 2px solid purple;
 }
 .portfolio__title > h1 {
 	font-size: 75px;

@@ -1,7 +1,7 @@
 .contact {
 	min-height: 100vh;
 	background: linear-gradient(rgb(35, 115, 126), #74cce9);
-	font-family: 'Ubuntu', sans-serif;
+	font-family: var(--main-font);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

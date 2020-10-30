@@ -6,6 +6,7 @@ import ReactLogo from '../images/react_logo.png';
 import ReduxLogo from '../images/redux_logo.png';
 import ReactRouterLogo from '../images/reactRouter_logo.png';
 import RestApiLogo from '../images/restApi_logo.png';
+import FirebaseLogo from '../images/firebase_logo.jpg';
 import MaterialUILogo from '../images/materialUI_logo.png';
 
 import './AboutMe.css';
@@ -55,6 +56,11 @@ const AboutMe = () => {
 							/>
 							<img
 								style={{ animationDelay: '1200ms' }}
+								src={FirebaseLogo}
+								alt=""
+							/>
+							<img
+								style={{ animationDelay: '1300ms' }}
 								src={MaterialUILogo}
 								alt=""
 							/>
