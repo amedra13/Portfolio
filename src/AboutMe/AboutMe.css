@@ -19,6 +19,7 @@
 		opacity: 1;
 	}
 }
+
 .aboutMe {
 	min-height: 100vh;
 	background-color: rgb(73, 73, 73);
@@ -37,6 +38,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	font-size: 1.4vw;
 }
 .aboutMe__imageContainer {
 	height: 50%;
@@ -56,6 +58,7 @@
 }
 .aboutMe__gridRight > div > * {
 	animation: text-slideIn 1s 350ms ease-in-out forwards;
+	font-size: 1.4vw;
 	opacity: 0;
 	margin: 25px 0;
 }
@@ -65,11 +68,12 @@
 	min-height: 200px;
 	margin: 0 auto;
 	text-align: center;
+	font-size: 1.4vw;
 }
 
 .skills_container img {
-	width: 150px;
-	height: 100px;
+	width: 12vw;
+	height: 150px;
 	margin: 10px;
 	object-fit: contain;
 	opacity: 0;
@@ -91,4 +95,32 @@
 .skills_container a:hover {
 	background-color: white;
 	color: black;
+}
+@media only screen and (max-width: 960px) {
+	.aboutMe__gridLeft {
+		font-size: 2.8vw;
+	}
+	.aboutMe__gridRight > div > * {
+		font-size: 2.8vw;
+	}
+	.skills_container {
+		font-size: 2.8vw;
+	}
+	.skills_container img {
+		width: 20vw;
+	}
+}
+@media only screen and (max-width: 600px) {
+	.aboutMe__Container {
+		width: 100% !important;
+	}
+	.aboutMe__gridLeft {
+		font-size: 4vw;
+	}
+	.aboutMe__gridRight > div > * {
+		font-size: 4vw;
+	}
+	.skills_container {
+		font-size: 4vw;
+	}
 }

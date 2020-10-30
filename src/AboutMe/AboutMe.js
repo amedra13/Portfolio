@@ -7,7 +7,6 @@ import ReduxLogo from '../images/redux_logo.png';
 import ReactRouterLogo from '../images/reactRouter_logo.png';
 import RestApiLogo from '../images/restApi_logo.png';
 import MaterialUILogo from '../images/materialUI_logo.png';
-import FirebaseLogo from '../images/firebase_logo.jpg';
 
 import './AboutMe.css';
 
@@ -29,7 +28,7 @@ const AboutMe = () => {
 					<Grid className="aboutMe__gridRight" item xs={12} md={6}>
 						<div>
 							<p>Hello my name is</p>
-							<h1>Andres Medrano</h1>
+							<h2>Andres Medrano</h2>
 							<p>
 								I'm a full-stack developer specialised in frontend and backend
 								development for complex scalable web apps. I write about web
@@ -41,7 +40,7 @@ const AboutMe = () => {
 					</Grid>
 					<Grid item xs={12}>
 						<div className="skills_container">
-							<h1>Experience with...</h1>
+							<h2>Experience with...</h2>
 							<img style={{ animationDelay: '800ms' }} src={ReactLogo} alt="" />
 							<img style={{ animationDelay: '900ms' }} src={ReduxLogo} alt="" />
 							<img
@@ -57,11 +56,6 @@ const AboutMe = () => {
 							<img
 								style={{ animationDelay: '1200ms' }}
 								src={MaterialUILogo}
-								alt=""
-							/>
-							<img
-								style={{ animationDelay: '1300ms' }}
-								src={FirebaseLogo}
 								alt=""
 							/>
 							<a href="#Contact">Need a Developer?</a>
