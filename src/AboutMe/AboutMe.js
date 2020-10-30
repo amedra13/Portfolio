@@ -13,7 +13,7 @@ import './AboutMe.css';
 const AboutMe = () => {
 	return (
 		<div id="About" className="aboutMe">
-			<LazyLoad height={500} once={true} offset={150}>
+			<LazyLoad height={500} once offset={100}>
 				<Grid className="aboutMe__Container" container>
 					<Grid className="aboutMe__gridLeft" item xs={12} md={6}>
 						<div className="aboutMe__imageContainer">

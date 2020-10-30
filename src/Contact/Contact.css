@@ -29,23 +29,18 @@
 .contact__header > h1 {
 	font-size: 50px;
 }
-.contact__grid {
-	background-color: rgb(73, 73, 73);
-	width: 80% !important;
-	height: 60% !important;
-	max-width: 1600px;
-	margin: 0 auto;
-	border-bottom-left-radius: 10px !important;
-	border-bottom-right-radius: 10px !important;
-}
 
 .contact__form {
+	background-color: rgb(73, 73, 73);
+	width: 80%;
 	height: 60vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	color: white;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 .contact__form > * {
 	margin: 15px 0;
@@ -53,7 +48,7 @@
 .contact__form > input {
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: bold;
-	width: 75%;
+	width: 50%;
 	height: 40px;
 	border-radius: 5px;
 	border: none;
@@ -69,7 +64,7 @@
 .contact__form > textarea {
 	font-family: 'Ubuntu', sans-serif;
 	font-weight: bold;
-	width: 75%;
+	width: 50%;
 	height: 150px;
 	border-radius: 5px;
 	border: none;
@@ -85,7 +80,7 @@
 }
 
 .contact__form > button {
-	width: 50%;
+	width: 25%;
 	height: 40px;
 	display: flex;
 	justify-content: center;
@@ -97,6 +92,11 @@
 	font-size: 18px;
 	color: white;
 	border: 1px solid white;
+	transition: all 0.2s ease-in-out;
+}
+.contact__form > button:hover {
+	color: black;
+	background-color: white;
 }
 
 .contact__infoContainer {
@@ -130,8 +130,14 @@
 	.contact {
 		padding: 30px;
 	}
-	.contact__header,
-	.contact__grid {
-		width: 100% !important;
+	.contact__form,
+	.contact__header {
+		width: 100%;
+	}
+	.contact__form > input {
+		width: 80%;
+	}
+	.contact__form > textarea {
+		width: 80%;
 	}
 }

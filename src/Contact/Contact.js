@@ -56,75 +56,35 @@ const Contact = () => {
 					<p>I'm available to create new and exciting projects together</p>
 				</div>
 			</div>
-			<Grid className="contact__grid" container>
-				<Grid item xs={12} md={6}>
-					<div className="contact__infoContainer">
-						<div>
-							<PersonPinCircleOutlinedIcon fontSize="large" />
-							<p>Redwood City, CA</p>
-						</div>
-						<div>
-							<PhoneAndroidOutlinedIcon fontSize="large" />
-							<p>650-995-6402</p>
-						</div>
-						<div>
-							<EmailOutlinedIcon fontSize="large" />
-							<p> andresthedev5@gmail.com</p>
-						</div>
-						<div>
-							<IconButton
-								target="_blank"
-								href="https://www.facebook.com/andres.medrano.98"
-							>
-								<FacebookIcon fontSize="large" />
-							</IconButton>
-							<IconButton
-								target="_blank"
-								href="https://www.linkedin.com/in/andres-medrano-19ba91132/"
-							>
-								<LinkedInIcon fontSize="large" />
-							</IconButton>
-							<IconButton>
-								<TwitterIcon fontSize="large" />
-							</IconButton>
-							<IconButton target="_blank" href="https://github.com/amedra13">
-								<GitHubIcon fontSize="large" />
-							</IconButton>
-						</div>
-					</div>
-				</Grid>
-				<Grid item xs={12} md={6}>
-					<form id="contactMe" className="contact__form" onSubmit={sendEmail}>
-						<p>{contactMessage}</p>
-						<input
-							type="text"
-							name="from_name"
-							placeholder="Name"
-							value={from_name}
-							required
-							onChange={(e) => setFrom(e.target.value)}
-						/>
-						<input
-							type="email"
-							name="from_email"
-							placeholder="Email"
-							value={from_email}
-							pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-							required
-							onChange={(e) => setFromEmail(e.target.value)}
-						/>
-						<textarea
-							type="text"
-							name="message"
-							placeholder="Your Message"
-							value={message}
-							required
-							onChange={(e) => setMessage(e.target.value)}
-						/>
-						<button type="submit">Submit</button>
-					</form>
-				</Grid>
-			</Grid>
+			<form id="contactMe" className="contact__form" onSubmit={sendEmail}>
+				<p>{contactMessage}</p>
+				<input
+					type="text"
+					name="from_name"
+					placeholder="Name"
+					value={from_name}
+					required
+					onChange={(e) => setFrom(e.target.value)}
+				/>
+				<input
+					type="email"
+					name="from_email"
+					placeholder="Email"
+					value={from_email}
+					pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+					required
+					onChange={(e) => setFromEmail(e.target.value)}
+				/>
+				<textarea
+					type="text"
+					name="message"
+					placeholder="Your Message"
+					value={message}
+					required
+					onChange={(e) => setMessage(e.target.value)}
+				/>
+				<button type="submit">Submit</button>
+			</form>
 		</div>
 	);
 };
