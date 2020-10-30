@@ -22,7 +22,7 @@
 	background-size: cover;
 	background-repeat: none;
 	overflow: hidden;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: var(--main-font);
 }
 .portfolio__title {
 	height: 20vh;

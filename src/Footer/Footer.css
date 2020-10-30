@@ -1,5 +1,9 @@
 .footer {
-	background-color: rgb(73, 73, 73);
+	background: url('../images/background.jpg');
+	background-attachment: fixed;
+	background-position: 50% 50%;
+	background-size: cover;
+	background-repeat: none;
 	color: white;
 	display: flex;
 	flex-direction: column;

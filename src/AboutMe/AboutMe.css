@@ -22,17 +22,17 @@
 
 .aboutMe {
 	min-height: 100vh;
-	background-color: rgb(73, 73, 73);
+	background-color: #01404e;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-family: var(--main-font);
+	color: white;
 }
 
 .aboutMe__Container {
 	width: 80% !important;
 	margin: 0px auto;
-	border: 5px solid pink;
 }
 .aboutMe__gridLeft {
 	display: flex;

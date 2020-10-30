@@ -10,6 +10,7 @@ const ProjectItem = ({ project }) => {
 				container
 				className="projectItem__grid"
 				direction={project.reverse ? 'row-reverse' : 'row'}
+				spacing={5}
 			>
 				<Grid
 					className={`projectItem__gridItem bg__white ${

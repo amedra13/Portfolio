@@ -19,14 +19,14 @@
 	}
 }
 .projectItem__grid {
-	height: 100% !important;
+	min-height: 80vh !important;
 }
 .projectItem__gridItem {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	height: 80vh;
+	height: 100%;
 	border-radius: 5px;
 	color: white;
 	font-family: var(--main-font);
@@ -55,30 +55,27 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	width: 80%;
-	min-height: 80%;
-	background-color: #fdfddffd;
+	height: 100%;
+	background-color: #01404e;
 	border-radius: 5px;
 	padding: 30px;
-	color: black;
+	color: white;
 }
 .projectItem__right > h1 {
 	font-size: 20px;
 }
 .projectItem__right > p {
 	padding-left: 20px;
-	font-size: 15px;
+	font-size: 1.4vw;
 	margin: 10px 0;
 }
 .projectItem__right > ul > li {
 	list-style: none;
 	padding-left: 20px;
-	font-size: 15px;
+	font-size: 1.4vw;
 	margin: 10px 0;
 }
-.bg__white {
-	background-color: #292926fd;
-}
+
 .slideLeft {
 	animation: slide-in-left 1.5s forwards;
 }

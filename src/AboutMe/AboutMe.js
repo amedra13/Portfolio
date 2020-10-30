@@ -20,6 +20,13 @@ const AboutMe = () => {
 						<div className="aboutMe__imageContainer">
 							<img src={PersonImage} alt="Andres" />
 						</div>
+						<p>
+							{' '}
+							<span role="img" aria-label="pin">
+								📍
+							</span>{' '}
+							Redwood City
+						</p>
 						<h2>Interests:</h2>
 						<p>Sports Cards</p>
 						<p>Coding</p>
@@ -28,8 +35,6 @@ const AboutMe = () => {
 					</Grid>
 					<Grid className="aboutMe__gridRight" item xs={12} md={6}>
 						<div>
-							<p>Hello my name is</p>
-							<h2>Andres Medrano</h2>
 							<p>
 								I'm a full-stack developer specialised in frontend and backend
 								development for complex scalable web apps. I write about web
