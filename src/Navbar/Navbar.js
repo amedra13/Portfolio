@@ -1,13 +1,11 @@
 import React from 'react';
-import FontDownloadOutlinedIcon from '@material-ui/icons/FontDownloadOutlined';
+import AndresLogo from '../images/A.png';
 import './Navbar.css';
 
 const Navbar = () => {
 	return (
 		<div className="navbar">
-			<a href="#Home">
-				<FontDownloadOutlinedIcon fontSize="large" />
-			</a>
+			<img src={AndresLogo} alt="" />
 			<div className="navbar__links">
 				<a href="#Home">Home</a>
 				<a href="#About">About</a>
