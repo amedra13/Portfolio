@@ -33,13 +33,21 @@
 .aboutMe__Container {
 	width: 80% !important;
 	margin: 0px auto;
+	margin-top: 30px;
+}
+.aboutMe__Container h1 {
+	font-size: 3.3vw;
 }
 .aboutMe__gridLeft {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-size: 1.4vw;
+	text-align: center;
+	font-size: var(--main-textSize);
+}
+.aboutMe__gridLeft > * {
+	margin: 5px 0;
 }
 .aboutMe__imageContainer {
 	height: 50%;
@@ -54,14 +62,14 @@
 	padding: 30px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: flex-start;
 	align-items: center;
 }
 .aboutMe__gridRight > div > * {
 	animation: text-slideIn 1s 350ms ease-in-out forwards;
-	font-size: 1.4vw;
+	font-size: var(--main-textSize);
 	opacity: 0;
-	margin: 25px 0;
+	margin: 30px 0;
 }
 
 .skills_container {
@@ -69,8 +77,11 @@
 	min-height: 200px;
 	margin: 0 auto;
 	text-align: center;
-	font-size: 1.4vw;
+	font-size: var(--main-textSize);
 }
+/* .skills_container h1 {
+	font-size: 3vw;
+} */
 
 .skills_container img {
 	width: 10vw;
@@ -98,30 +109,18 @@
 	color: black;
 }
 @media only screen and (max-width: 960px) {
-	.aboutMe__gridLeft {
-		font-size: 2.8vw;
-	}
-	.aboutMe__gridRight > div > * {
-		font-size: 2.8vw;
-	}
-	.skills_container {
-		font-size: 2.8vw;
-	}
 	.skills_container img {
 		width: 20vw;
+	}
+	.aboutMe__Container h1 {
+		font-size: 6vw;
 	}
 }
 @media only screen and (max-width: 600px) {
 	.aboutMe__Container {
 		width: 100% !important;
 	}
-	.aboutMe__gridLeft {
-		font-size: 4vw;
-	}
-	.aboutMe__gridRight > div > * {
-		font-size: 4vw;
-	}
-	.skills_container {
-		font-size: 4vw;
+	.aboutMe__Container h1 {
+		font-size: 8.3vw;
 	}
 }

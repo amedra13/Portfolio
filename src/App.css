@@ -5,6 +5,10 @@
 }
 :root {
 	--main-font: 'Barlow Condensed', sans-serif;
+	--main-textSize: 1.4vw;
+	--main-headerSize: 1.6vw;
+	--main-titleSize: 2.2vw;
+	--main-nameSize: 15vw;
 }
 html {
 	scroll-behavior: smooth;
@@ -39,4 +43,21 @@ body {
 	font-size: 120px;
 	text-align: center;
 	font-family: 'Ubuntu', sans-serif;
+}
+
+@media only screen and (max-width: 960px) {
+	:root {
+		--main-textSize: 2.8vw;
+		--main-headerSize: 3.5vw;
+		--main-titleSize: 4vw;
+		--main-nameSize: 20vw;
+	}
+}
+@media only screen and (max-width: 600px) {
+	:root {
+		--main-textSize: 4vw;
+		--main-headerSize: 4.5vw;
+		--main-titleSize: 5vw;
+		--main-nameSize: 25vw;
+	}
 }

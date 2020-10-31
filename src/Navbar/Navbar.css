@@ -20,7 +20,7 @@
 	margin: 0 20px;
 	text-decoration: none;
 	color: rgba(203, 226, 235, 0.822);
-	font-size: 20px;
+	font-size: var(--main-titleSize);
 	font-weight: bold;
 }
 

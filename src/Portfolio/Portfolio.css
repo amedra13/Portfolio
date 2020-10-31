@@ -25,10 +25,10 @@
 	font-family: var(--main-font);
 }
 .portfolio__title {
-	height: 20vh;
+	height: 30vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: center;
 	text-align: center;
 	color: rgb(203, 226, 235);
 }
@@ -43,6 +43,7 @@
 }
 
 .portfolio__projects > div {
-	margin: 100px auto;
+	margin: 0 auto;
+	margin-bottom: 65px;
 	width: 90%;
 }

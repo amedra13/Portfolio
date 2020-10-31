@@ -25,13 +25,15 @@ const AboutMe = () => {
 							<span role="img" aria-label="pin">
 								📍
 							</span>{' '}
-							Redwood City
+							Redwood City, CA
 						</p>
-						<h2>Interests:</h2>
-						<p>Sports Cards</p>
-						<p>Coding</p>
-						<p>Eating</p>
-						<p>VideoGames</p>
+						<div>
+							<h1>Interests:</h1>
+							<p>Sport Cards</p>
+							<p>Coffee</p>
+							<p>Recreational Basketball</p>
+							<p>Video Games</p>
+						</div>
 					</Grid>
 					<Grid className="aboutMe__gridRight" item xs={12} md={6}>
 						<div>
@@ -46,7 +48,7 @@ const AboutMe = () => {
 					</Grid>
 					<Grid item xs={12}>
 						<div className="skills_container">
-							<h2>Experience with...</h2>
+							<h1>Experience with...</h1>
 							<img style={{ animationDelay: '800ms' }} src={ReactLogo} alt="" />
 							<img style={{ animationDelay: '900ms' }} src={ReduxLogo} alt="" />
 							<img
